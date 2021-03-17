@@ -1,0 +1,6 @@
+footer {
+    background-color: salmon;
+    @media screen AND (min-width:768) {
+        background-color: sandybrown;
+    }
+}
