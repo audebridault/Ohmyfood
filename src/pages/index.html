@@ -1,24 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test2</title>
+    <title>Bienvenue | Oh My Food</title>
+    <script src="https://kit.fontawesome.com/2793c1abba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>hello :)</h1>
+    <header> <img src="./images/logo/ohmyfood.png" alt="logo" /></header>
+
+    <label>
+        <i class="fas fa-map-marker-alt"></i>
+        <input placeholder="Paris, Belleville" type="text">
+    </label>
     <section>
-        <%- include('../partials/restaurant/restaurant.html', {
-            "titre" : "le chic à la francaise",
-            "image" : "----"
-        }); %>
-        <%- include('../partials/restaurant/restaurant.html', {
-            "titre" : "la palette du goût",
-            "image" : "----"
-        }); %>
+        <h1> Réservez le menu qui vous convient</h1>
+        <p> Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <button>Eplorer nos restaurants</button>
     </section>
+
+    <section>
+        <p>
+        <h2>Fonctionnement</h2>
+        <ol>
+            <li>Choisissez un restaurant</li>
+            <li>Composez votre menu</li>
+            <li>Déguster au restaurant</li>
+        </ol>
+        </p>
+    </section>
+    <main>
+        <%- include('../partials/restaurant/restaurant.html', { "titre" : "le chic à la francaise" , "image"
+            : "jay-wennington-N_Y88TWmGwA-unsplash" , "adresse" : "Mesnilmontant" }); %>
+
+            <%- include('../partials/restaurant/restaurant.html', { "titre" : "la palette du goût" , "image" : "----"
+                , "adresse" : "Mesnilmontant" }); %>
+    </main>
     <%- include('../partials/footer/footer.html'); %>
 </body>
+
 </html>
