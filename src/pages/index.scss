@@ -1,0 +1,65 @@
+input {
+  border: none;
+  background-color: #eaeaea;
+}
+label {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  background-color: #eaeaea;
+  border-top: solid 2.5px;
+  border-color: #d8d8d8;
+  align-items: center;
+  i {
+    margin-right: 1rem;
+  }
+}
+
+h2 {
+  margin: 0;
+  padding: 2rem 1rem;
+}
+h3 {
+  margin: 0;
+  padding: 3rem 1rem 0rem 1rem;
+}
+
+#fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+#fonctionnement ol {
+  margin: 0;
+  padding: 0 1rem;
+}
+#fonctionnement li {
+  border-radius: 20px;
+  box-shadow: 0 3px 5px 3px #ededed;
+  background-color: #f6f6f6;
+  height: 75px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  @for $i from 1 through 3 {
+    &:nth-of-type(#{$i})::before {
+      content: "#{$i}";
+    }
+  }
+  i {
+    padding: 1rem;
+  }
+}
+
+#fonctionnement li::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: $primaire;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  display: flex;
+}
