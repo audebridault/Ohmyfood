@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La palette du goût | Oh My Food</title>
+    <script src="https://kit.fontawesome.com/2793c1abba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header> <i class="fas fa-arrow-left"></i><img src="./images/logo/ohmyfood.png" alt="logo" /></header>
+
+    <main>
+        <img src="./images/restaurants/la-palette-du-gout.jpg">
+
+        <h1>La palette du goût <i class="far fa-heart"></i></h1>
+
+        <section class="menu">
+            <h2>ENTREES</h2>
+
+            <%- include('../partials/plat/plat.html', { "titre" : "Fricassée d'escargot" , "texte"
+                : "Au piment d'Espelette " , "prix" : "25" }); %>
+
+                <%- include('../partials/plat/plat.html', { "titre" : "Foie gras de canard mi-cuit" , "texte"
+                    : "Et ses copeaux de truffe noire" , "prix" : "35" }); %>
+
+                    <%- include('../partials/plat/plat.html', { "titre" : "Oeuf au plat" , "texte"
+                        : "Assaisonné à la truffe sur lit de caviar" , "prix" : "20" }); %>
+        </section>
+
+
+
+        <section class="menu">
+            <h2>PLATS</h2>
+
+            <%- include('../partials/plat/plat.html', { "titre" : "Filet de boeuf aux herbes" , "texte"
+                : "Accompagné de sa ribambelle de légumes " , "prix" : "40" }); %>
+
+                <%- include('../partials/plat/plat.html', { "titre" : "Parmentier de queue de boeuf" , "texte"
+                    : "À la truffe noire sur sa purée de panais" , "prix" : "35" }); %>
+
+                    <%- include('../partials/plat/plat.html', { "titre" : "Filet de turbot" , "texte" : "Aux agrumes"
+                        , "prix" : "44" }); %>
+        </section>
+
+
+
+        <section class="menu">
+            <h2>DESSERTS</h2>
+
+            <%- include('../partials/plat/plat.html', { "titre" : "Paris-Brest" , "texte" : "Revisité " , "prix" : "18"
+                }); %>
+
+                <%- include('../partials/plat/plat.html', { "titre" : "Macaron au chocolat d'exception" , "texte"
+                    : "Et glace à la vanille de Madagascar" , "prix" : "22" }); %>
+
+                    <%- include('../partials/plat/plat.html', { "titre" : "Mousse au chocolat" , "texte"
+                        : "Au piment d'Espelette et à la truffe noire" , "prix" : "23" }); %>
+        </section>
+
+
+        <div><button>Commander</button></div>
+
+    </main>
+
+    <%- include('../partials/footer/footer.html'); %>
+</body>

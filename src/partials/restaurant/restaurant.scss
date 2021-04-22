@@ -1,4 +1,5 @@
 .restaurants {
+  cursor: pointer;
   display: grid;
   grid-template-areas:
     "image image"
@@ -11,7 +12,7 @@
   justify-content: space-evenly;
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 3px #efefef;
+  box-shadow: $shadow;
   grid-template-columns: 90% 10%;
   max-width: 360px;
 
@@ -38,9 +39,29 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  i:hover {
+    font-weight: bold;
+    background: linear-gradient(#d46edc, #a85edc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 50rem;
+    background-position-y: 4rem;
+    animation: 1s forwards remplissage;
   }
   h2 {
     margin: 0;
     padding: 1rem 1rem 0.5rem 1rem;
+  }
+}
+
+@keyframes remplissage {
+  from {
+    background-position-y: 4rem;
+  }
+  to {
+    background-position-y: 2rem;
   }
 }

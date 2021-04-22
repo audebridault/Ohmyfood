@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chic à la Française | Oh My Food</title>
+    <script src="https://kit.fontawesome.com/2793c1abba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header> <i class="fas fa-arrow-left"></i><img src="./images/logo/ohmyfood.png" alt="logo" /></header>
+
+    <main>
+        <img src="./images/restaurants/a-la-francaise.jpg">
+
+        <h1>A la française <i class="far fa-heart"></i></h1>
+
+        <section class="menu">
+            <h2>ENTREES</h2>
+
+            <%- include('../partials/plat/plat.html', { "titre" : "Tartare de poulpe acidulé" , "texte"
+                : "Aux zests d'orange" , "prix" : "25" }); %>
+
+                <%- include('../partials/plat/plat.html', { "titre" : "Velouté de légumes d'antan" , "texte"
+                    : "Carotte, panais, topinambour" , "prix" : "35" }); %>
+
+                    <%- include('../partials/plat/plat.html', { "titre" : "Soupe à l'oignon" , "texte" : "Revisitée"
+                        , "prix" : "20" }); %>
+
+        </section>
+
+
+
+        <section class="menu">
+            <h2>PLATS</h2>
+
+            <%- include('../partials/plat/plat.html', { "titre" : "Coquilles Saint-Jacques" , "texte"
+                : "Accompagnées d'une purée de panais" , "prix" : "40" }); %>
+
+                <%- include('../partials/plat/plat.html', { "titre" : "Magret de canard" , "texte"
+                    : "Et parmentier de pommes de terre" , "prix" : "35" }); %>
+
+                    <%- include('../partials/plat/plat.html', { "titre" : "Pigeonneau d’Ille-et-Vilaine" , "texte"
+                        : "Sur son lit de gnocchis aux légumes" , "prix" : "44" }); %>
+        </section>
+
+
+
+        <section class="menu">
+            <h2>DESSERTS</h2>
+
+            <%- include('../partials/plat/plat.html', { "titre" : "Pétales de violettes glacés" , "texte"
+                : "Et purée de noisettes" , "prix" : "18" }); %>
+
+                <%- include('../partials/plat/plat.html', { "titre" : "Fondant au chocolat" , "texte" : "Revisité"
+                    , "prix" : "22" }); %>
+
+                    <%- include('../partials/plat/plat.html', { "titre" : "Millefeuille croustillant" , "texte"
+                        : "Myrtilles et pâte d’amande" , "prix" : "23" }); %>
+        </section>
+
+
+        <div><button>Commander</button></div>
+
+    </main>
+    <%- include('../partials/footer/footer.html'); %>
+</body>

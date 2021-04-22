@@ -27,27 +27,27 @@
     </section>
 
     <section id="fonctionnement">
-        <p>
+
         <h2>Fonctionnement</h2>
         <ol>
             <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
             <li><i class="fas fa-list"></i>Composez votre menu</li>
             <li><i class="fas fa-store"></i>Déguster au restaurant</li>
         </ol>
-        </p>
+
     </section>
     <main>
         <h3>Restaurants</h3>
-        <%- include('../partials/restaurant/restaurant.html', { "titre" : "La palette du goût" , "image"
+        <%- include('../partials/restaurant/restaurant.html', { "url" : "la-palette-du-gout" , "titre"
             : "La palette du goût" , "adresse" : "Ménilmontant" }); %>
 
-            <%- include('../partials/restaurant/restaurant.html', { "titre" : "La note enchantée" , "image"
+            <%- include('../partials/restaurant/restaurant.html',{ "url" : "la-note-enchantee" , "titre"
                 : "La note enchantée" , "adresse" : "Charonne" }); %>
 
-                <%- include('../partials/restaurant/restaurant.html', { "titre" : "A la française" , "image"
+                <%- include('../partials/restaurant/restaurant.html',{ "url" : "a-la-francaise" , "titre"
                     : "A la française" , "adresse" : "Cité rouge" }); %>
 
-                    <%- include('../partials/restaurant/restaurant.html', { "titre" : "Le délice des sens" , "image"
+                    <%- include('../partials/restaurant/restaurant.html',{ "url" : "le-delice-des-sens" , "titre"
                         : "Le délice des sens" , "adresse" : "Folie-Méricourt" }); %>
     </main>
     <%- include('../partials/footer/footer.html'); %>

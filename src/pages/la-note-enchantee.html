@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La note enchantée | Oh My Food</title>
+    <script src="https://kit.fontawesome.com/2793c1abba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header> <i class="fas fa-arrow-left"></i><img src="./images/logo/ohmyfood.png" alt="logo" /></header>
+    <main>
+        <img src="./images/restaurants/la-note-enchantee.jpg">
+
+        <h1>La note enchantée <i class="far fa-heart"></i></h1>
+
+
+
+        <section class="menu">
+            <h2>ENTREES</h2>
+
+            <%- include('../partials/plat/plat.html', { "titre" : "Ravioles de foie gras" , "texte"
+                : "Accompagnés de leur crème à la truffe" , "prix" : "25" }); %>
+
+                <%- include('../partials/plat/plat.html', { "titre" : "Caviar osciètre" , "texte"
+                    : "Sur blini à la farine de blé noir" , "prix" : "35" }); %>
+
+                    <%- include('../partials/plat/plat.html', { "titre" : "Homard et espuma de potiron" , "texte"
+                        : "Mariné aux zestes d'orange" , "prix" : "20" }); %>
+
+                        <%- include('../partials/plat/plat.html', { "titre" : "Foie gras de canard cuit entier"
+                            , "texte" : "Confiture de figue et pain toasté" , "prix" : "35" }); %>
+
+        </section>
+
+
+
+        <section class="menu">
+            <h2>PLATS</h2>
+
+            <%- include('../partials/plat/plat.html', { "titre" : "Noix de coquilles Saint-Jacques" , "texte"
+                : "Sur lit de purée de céleri-rave" , "prix" : "40" }); %>
+
+                <%- include('../partials/plat/plat.html', { "titre" : "Langoustine poêlée" , "texte"
+                    : "Purée de patate douce" , "prix" : "35" }); %>
+
+                    <%- include('../partials/plat/plat.html', { "titre" : "Mijoté de queue de boeuf" , "texte"
+                        : "Et riz sauvage aux zestes de citron" , "prix" : "44" }); %>
+
+        </section>
+
+
+
+        <section class="menu">
+            <h2>DESSERTS</h2>
+
+            <%- include('../partials/plat/plat.html', { "titre" : "Macaron noisette et chocolat" , "texte"
+                : "Glace au caramel brun et sel de Guérande" , "prix" : "18" }); %>
+
+                <%- include('../partials/plat/plat.html', { "titre" : "Baba au rhum revisité" , "texte"
+                    : "Avec son coulis de citron" , "prix" : "22" }); %>
+
+                    <%- include('../partials/plat/plat.html', { "titre" : "Tarte au citron meringuée" , "texte"
+                        : "Déstructurée" , "prix" : "23" }); %>
+
+        </section>
+
+
+
+        <div><button>Commander</button></div>
+
+    </main>
+
+    <%- include('../partials/footer/footer.html'); %>
+
+</body>

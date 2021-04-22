@@ -1,0 +1,17 @@
+@keyframes checkOver {
+  from {
+    width: 0;
+  }
+  to {
+    width: 3rem;
+  }
+}
+
+@keyframes rotateCheck {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
