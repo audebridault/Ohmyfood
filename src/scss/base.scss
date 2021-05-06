@@ -25,11 +25,13 @@ button {
   background: linear-gradient(#e06fda, #a55bdb);
   border-style: none;
   border-radius: 50px;
-  width: 60%;
+  width: 70%;
   height: 50px;
   font-size: 18px;
   color: white;
+  white-space: nowrap;
 }
+
 #accueil {
   background-color: $background;
 }
@@ -46,17 +48,22 @@ main {
 h1 {
   display: block;
   text-align: center;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 900;
   width: 80%;
   margin: 0;
   padding: 1.5em 1em 0 1em;
+  @media screen and (min-width: 768px)
+  {
+  width: 100%;
+  }
 }
+
 
 p {
   display: block;
   text-align: center;
-  font-size: 19px;
+  font-size: 18px;
   color: #707070;
   padding: 1.5em 0 1em 0;
 }

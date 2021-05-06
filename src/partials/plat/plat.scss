@@ -5,6 +5,7 @@ article.plat {
   margin: 0 auto 1rem auto;
   background-color: white;
   border-radius: 1rem;
+  
 
   div {
     display: block;
@@ -43,6 +44,7 @@ article.plat {
       border-radius: 50%;
       padding: 0.5rem;
       color: $tertiaire;
+      cursor: pointer;
     }
   }
 
@@ -55,4 +57,9 @@ article.plat {
 }
 img {
   width: 100%;
+   @media screen and (min-width: 768px)
+    {
+      width: 50%;
+      margin: 5rem 25% 5rem 25%;
+    }
 }

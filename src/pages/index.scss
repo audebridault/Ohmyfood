@@ -51,16 +51,23 @@ h3 {
         content: "#{$i}";
       }
     }
+    &::before {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-color: $primaire;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+      display: flex;
+      margin-left: -0.5rem;
+      color: white;
+    }
+    &:last-of-type {
+      background-color: #f5edff;
+      & i {
+        color: $primaire;
+      }
+    }
   }
-}
-
-#fonctionnement li::before {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-  background-color: $primaire;
-  justify-content: center;
-  align-items: center;
-  margin-right: 1rem;
-  display: flex;
 }

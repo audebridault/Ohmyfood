@@ -22,7 +22,14 @@
     background: $background;
     width: auto;
     border-radius: 1rem 1rem 0 0;
+    font-style: italic;
+    font-family: Shrikhand;
+    font-weight: normal;
+    text-align: left;
+    display: flex;
+    justify-content: space-between
   }
+
   h2::after {
     content: "";
     width: 3rem;
