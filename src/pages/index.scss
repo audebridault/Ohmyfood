@@ -71,3 +71,26 @@ h3 {
     }
   }
 }
+
+aside{
+  background-color: rgba(255, 255, 255, .75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  overflow: hidden;
+  top: 0;
+  animation: afficheLoader 3s forwards;
+  & i{
+    width: 4rem;
+    height: 4rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color:$primaire;
+    animation: rotateLoader 3s;
+    border: 1px solid $primaire;
+    border-radius: 50%;
+  }
+}

@@ -2,9 +2,10 @@ article.plat {
   display: flex;
   width: 90%;
   height: 4.125rem;
-  margin: 0 auto 1rem auto;
+  margin: 5rem auto 1rem auto;
   background-color: white;
   border-radius: 1rem;
+  animation: arriveePlats 3s forwards;
   
 
   div {
@@ -60,6 +61,5 @@ img {
    @media screen and (min-width: 768px)
     {
       width: 50%;
-      margin: 5rem 25% 5rem 25%;
     }
 }

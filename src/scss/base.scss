@@ -1,6 +1,8 @@
 $primaire: #9356dc;
 $secondaire: #ff79da;
 $tertiaire: #99e2d0;
+$primaireSombre : lighten($primaire, 5%);
+$secondaireSombre : lighten($secondaire, 5%);
 $background: #f6f6f6;
 $shadow: 0 3px 5px 3px #ededed;
 
@@ -22,7 +24,7 @@ header {
 }
 
 button {
-  background: linear-gradient(#e06fda, #a55bdb);
+  background: linear-gradient($secondaire, $primaire);
   border-style: none;
   border-radius: 50px;
   width: 70%;
@@ -30,6 +32,11 @@ button {
   font-size: 18px;
   color: white;
   white-space: nowrap;
+  transition: all .5s;
+  &:hover{
+    box-shadow: 0 4px 7px #9e9e9e;
+    background: linear-gradient($secondaireSombre, $primaireSombre);
+  }
 }
 
 #accueil {
@@ -55,7 +62,9 @@ h1 {
   padding: 1.5em 1em 0 1em;
   @media screen and (min-width: 768px)
   {
-  width: 100%;
+  // width: 100%;
+  margin: auto;
+  padding: 1.5em 0 0 0;
   }
 }
 

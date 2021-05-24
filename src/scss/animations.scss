@@ -15,3 +15,36 @@
     transform: rotate(0);
   }
 }
+
+@keyframes arriveePlats {
+  from{
+    opacity: 0;
+    margin-top: 5rem;
+  }
+  to{
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes afficheLoader {
+  0%{
+    height: 100vh;
+  }
+  99%{
+    height: 100vh;
+  }
+  100%{
+    height: 0px;
+  }
+  
+}
+
+@keyframes rotateLoader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
