@@ -66,6 +66,15 @@ h1 {
   margin: auto;
   padding: 1.5em 0 0 0;
   }
+   i:hover {
+    font-weight: bold;
+    background: linear-gradient(#d46edc, #a85edc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 50rem;
+    background-position-y: 4rem;
+    animation: 1s forwards remplissage;
+  }
 }
 
 
