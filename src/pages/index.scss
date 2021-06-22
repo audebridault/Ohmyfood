@@ -77,11 +77,11 @@ aside{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  //position: fixed;
   width: 100vw;
   overflow: hidden;
   top: 0;
-  animation: afficheLoader 3s forwards;
+  //animation: afficheLoader 3s forwards;
   & i{
     width: 4rem;
     height: 4rem;
