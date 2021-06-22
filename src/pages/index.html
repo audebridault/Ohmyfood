@@ -38,16 +38,8 @@
     </section>
     <main>
         <h3>Restaurants</h3>
-        <%- include(
-                "../partials/restaurant/restaurant.html", 
-                {
-                    "url" : "la-palette-du-gout", 
-                    "titre" : "La palette du goût", 
-                    "adresse" : "Ménilmontant", 
-                    "classe" : "nouveau"
-                }
-            ); 
-        %>
+        <%- include( "../partials/restaurant/restaurant.html" , { "url" : "la-palette-du-gout" , "titre"
+            : "La palette du goût" , "adresse" : "Ménilmontant" , "classe" : "nouveau" } ); %>
 
             <%- include('../partials/restaurant/restaurant.html',{ "url" : "la-note-enchantee" , "titre"
                 : "La note enchantée" , "adresse" : "Charonne" , "classe" : "nouveau" }); %>
@@ -59,9 +51,9 @@
                         : "Le délice des sens" , "adresse" : "Folie-Méricourt" , "classe" : "" }); %>
     </main>
     <%- include('../partials/footer/footer.html'); %>
-    <aside>
-        <i class="fas fa-utensils"></i>
-    </aside>
+        <aside>
+            <i class="fas fa-utensils"></i>
+        </aside>
 </body>
 
 </html>
