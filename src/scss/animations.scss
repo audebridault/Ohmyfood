@@ -3,13 +3,13 @@
     width: 0;
   }
   to {
-    width: 7rem;
+    width: 5rem;
   }
 }
 
 @keyframes rotateCheck {
   from {
-    transform: rotate(180deg);
+    transform: rotate(-360deg);
   }
   to {
     transform: rotate(0);
